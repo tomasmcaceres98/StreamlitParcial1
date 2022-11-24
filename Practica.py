@@ -1,6 +1,6 @@
 import plotly.express as px
 import pandas as pd
-dfVel = pd.read_excel("/Users/tomascaceres/PycharmProjects/Parcial1/venv/ARCHIVO.xlsx")
+dfVel = pd.read_excel("https://github.com/tomasmcaceres98/StreamlitParcial1/blob/main/ARCHIVO.xlsx?raw=true")
 import plotly.figure_factory as ff
 import numpy as np
 import streamlit as st

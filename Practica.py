@@ -38,7 +38,7 @@ fig2=px.line(dfNuevo,x=dfNuevo.index,y="Upload", title="Velocidad Promedio de In
 st.plotly_chart(fig2, use_container_width=True)
 st.title("Comparación de subida y bajada")
 fig1.add_scatter(x=dfNuevo.index,y=dfNuevo['Upload'])
-
+st.plotly_chart(fig1, use_container_width=True)
 
 
 

@@ -18,6 +18,7 @@ dfDatos.at[27,'Fecha']='2022/02/21'
 dfDatos[dfDatos["Fecha"]=='02/032022']
 dfDatos.at[37,'Fecha']='2022/03/02'
 dfDatos[dfDatos["Fecha"]=='07/09/2022']
+dfDatos.at[100,"Upload"]=35.31
 dfDatos[dfDatos["Download"]=='62.25']
 dfDatos['Fecha'].unique()
 dfDatos[dfDatos["Fecha"]=='07/09/2022']

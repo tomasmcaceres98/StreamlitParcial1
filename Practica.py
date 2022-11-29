@@ -34,7 +34,7 @@ st.title("Velocidad promedio de bajada de internet")
 fig1=px.bar(dfNuevo,x=dfNuevo.index,y="Download", title="Velocidad Promedio de Internet")
 st.plotly_chart(fig1, use_container_width=True)
 st.title("Velocidad promedio de subida de internet")
-fig2=px.bar(dfNuevo,x=dfNuevo.index,y="Upload", title="Velocidad Promedio de Internet")
+fig2=px.line(dfNuevo,x=dfNuevo.index,y="Upload", title="Velocidad Promedio de Internet",markers=True)
 st.plotly_chart(fig2, use_container_width=True)
 
 

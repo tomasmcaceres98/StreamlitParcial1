@@ -36,7 +36,8 @@ st.plotly_chart(fig1, use_container_width=True)
 st.title("Velocidad promedio de subida de internet")
 fig2=px.line(dfNuevo,x=dfNuevo.index,y="Upload", title="Velocidad Promedio de Internet",markers=True)
 st.plotly_chart(fig2, use_container_width=True)
-
+st.title("Comparación de subida y bajada")
+fig1.add_scatter(x=dfNuevo.index,y=dfNuevo['Upload'])
 
 
 

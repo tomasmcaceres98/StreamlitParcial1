@@ -31,7 +31,7 @@ dfDatos['Upload'] = pd.to_numeric(dfDatos['Upload'])
 dfNuevo = dfDatos.groupby(dfDatos["Fecha"])[["Download","Upload"]].mean()
 dfNuevo
 st.title("Velocidad promedio de bajada de internet")
-fig1=px.line(dfNuevo,x=dfNuevo.index,y="Download", title="Velocidad Promedio de Internet",markers=True)
+fig1=px.bar(dfNuevo,x=dfNuevo.index,y="Download", title="Velocidad Promedio de Internet",markers=True)
 st.plotly_chart(fig1, use_container_width=True)
 st.title("Velocidad promedio de subida de internet")
 fig2=px.line(dfNuevo,x=dfNuevo.index,y="Upload", title="Velocidad Promedio de Internet",markers=True)
